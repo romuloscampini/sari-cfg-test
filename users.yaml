@@ -1,0 +1,3 @@
+- login: eliezio.oliveira@gmail.com
+  permissions:
+    - db: "*"
