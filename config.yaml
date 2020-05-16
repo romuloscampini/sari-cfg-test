@@ -21,7 +21,7 @@ grant_types:
   - DELETE
 
 bastion_host:
-  hostname: 10.0.1.123
+  hostname: 63.32.3.62
   admin_username: admin
   proxy_username: acme
 
