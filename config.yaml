@@ -20,6 +20,7 @@ grant_types:
   - INSERT
   - DELETE
 
+# TODO: This info should be configured in CodeBuild Job
 bastion_host:
   hostname: 10.0.1.123
   admin_username: admin
