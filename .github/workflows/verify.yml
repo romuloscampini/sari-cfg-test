@@ -1,0 +1,26 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Verify
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: pyKwalify users.yaml
+      uses: eliezio/action-pykwalify@v0.3
+      with:
+        # Yaml files to validate
+        files: eu-west-1/databases.yaml
+        # Schema definition file
+        schema: https://raw.githubusercontent.com/eliezio/sari/master/schema/databases.yaml
+        # Enables strict validation of all keywords for all Rule objects to find unsupported keyword usage
+        strict: true
