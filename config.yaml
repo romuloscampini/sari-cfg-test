@@ -1,12 +1,3 @@
-aws:
-  region: eu-west-1
-
-okta:
-  organization: dev-203763
-  aws_app:
-    iam_user: OktaSSOUser
-    label: Amazon Web Services
-
 grant_types:
   query:
   - SELECT
