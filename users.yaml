@@ -1,7 +1,5 @@
-- login: eliezio.oliveira@gmail.com
+- login: romulo@scampini.com.br
   permissions:
     - db: "*"
       grant_type: crud
-      not_valid_after: 2020-05-16 04:16:00 +01
-
 
